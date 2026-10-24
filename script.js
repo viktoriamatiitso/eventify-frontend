@@ -35,10 +35,10 @@ function renderEvents(events) {
         const card = document.createElement('div');
         card.className = 'event-card';
         card.innerHTML = `
-            <h3>${event.title}</h3>
-            <p>${event.description}</p>
-            <p><strong>Ціна:</strong> ${formattedPrice} грн</p>
-            <p><strong>Дата:</strong> ${formattedDate}</p>
+        <h3><a href="event.html?id=${event.id}" class="event-link">${event.title}</a></h3>
+        <p>${event.description}</p>
+        <p><strong>Ціна:</strong> ${formattedPrice} грн</p>
+        <p><strong>Дата:</strong> ${formattedDate}</p>
         `;
         container.appendChild(card);
     });

@@ -132,3 +132,90 @@ body {
     font-size: 14px;
     margin-top: auto;
 }
+
+.event-link {
+    color: #f3e8ff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.event-link:hover {
+    color: #d8b4fe;
+    text-decoration: underline;
+}
+
+.event-detail-card {
+    background: #1e1e2e;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #2d2d3f;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event-detail-card h1 {
+    color: #d8b4fe;
+    margin-top: 0;
+    font-size: 28px;
+    border-bottom: 1px solid #2d2d3f;
+    padding-bottom: 15px;
+}
+
+.event-description-large {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.event-info-box {
+    background: #171721;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #2d2d3f;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.event-info-box p {
+    margin: 0;
+    color: #e2e8f0;
+    font-size: 15px;
+}
+
+.event-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buy-ticket-btn {
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.buy-ticket-btn:hover {
+    background-color: #6d28d9;
+}
+
+.back-btn {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+    color: #d8b4fe;
+}
