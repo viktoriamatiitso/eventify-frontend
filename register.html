@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventify</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-container">
+                <a href="index.html" class="logo">🎉 Eventify</a>
+                <nav class="nav-links">
+                    <a href="artists.html">Артисти</a>
+                    <a href="venues.html">Майданчики</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="register.html", class="active">Реєстрація</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <div class="auth-card">
+                <h1>Реєстрація</h1>
+                <p class="auth-subtitle">Створи аккаунт, щоб купувати квитки в один клік</p>
+
+                <div id="error-message" class="global-error" style="display: none;"></div>
+                <div id="success-message" class="global-success" style="display: none;"></div>
+
+                <form id="register-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="username">Username <span class="required-star">*</span></label>
+                        <input type="text" id="username" name="username" required>
+                        <span class="field-error" id="error-username"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="first_name">Ім'я</label>
+                        <input type="text" id="first_name" name="first_name">
+                        <span class="field-error" id="error-first_name"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">Прізвище</label>
+                        <input type="text" id="last_name" name="last_name">
+                        <span class="field-error" id="error-last_name"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required-star">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="field-error" id="error-email"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль <span class="required-star">*</span></label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="field-error" id="error-password"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password_confirmation">Повторіть пароль <span class="required-star">*</span></label>
+                        <input type="password" id="password_confirmation" name="password_confirmation" required>
+                        <span class="field-error" id="error-password_confirmation"></span>
+                    </div>
+
+                    <p class="required-hint"><span class="required-star">*</span> - поля, обов'язкові для заповнення</p>
+
+                    <button type="submit" class="buy-ticket-btn" id="submit-btn">Зареєструватися</button>
+                </form>
+
+                <p class="auth-redirect">
+                    Вже є аккаунт? <a href="login.html" class="event-link">Увійти</a>
+                </p>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Developed by Viktoria Matiitso</p>
+        </footer>
+
+        <script src="register.js"></script>
+    </body>
+</html>
