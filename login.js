@@ -1,5 +1,10 @@
 const LOGIN_URL = 'http://127.0.0.1:8000/api/auth/login/';
 
+const existingToken = localStorage.getItem('access_token');
+if (existingToken) {
+    window.location.href = 'index.html'; 
+}
+
 document.getElementById('login-form').addEventListener('submit', async function(e) {
     e.preventDefault();
 
