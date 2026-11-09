@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">🎉 Eventify</a>
+            <nav class="nav-links">
+                <a href="index.html">Події</a>
+                <a href="artists.html">Артисти</a>
+                <a href="venues.html">Майданчики</a>
+                <a href="about.html">Про нас</a>
+                <span id="auth-nav" style="display: inline-flex; gap: 15px; margin-left: 10px;"></span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="event-detail-card" style="max-width: 650px; margin: 40px auto; text-align: left;">
+            <h2 style="color: #d8b4fe; margin-bottom: 20px;">Особистий кабінет</h2>
+            
+            <div id="profile-container">
+                <p style="color: #94a3b8;">Завантаження профілю...</p>
+            </div>
+
+            <div style="margin-top: 30px; display: flex; gap: 15px;">
+                <a href="index.html" style="background-color: #7c3aed; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500;">На головну</a>
+                <button id="profile-logout-btn" style="background: transparent; border: 1px solid #7c3aed; color: #d8b4fe; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 16px;">Вийти з акаунта</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Developed by Viktoria Matiitso</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

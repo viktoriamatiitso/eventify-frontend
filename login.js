@@ -32,6 +32,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
         if (response.ok) {
             localStorage.setItem('access_token', data.access);
             localStorage.setItem('refresh_token', data.refresh);
+            localStorage.setItem('user_id', data.user_id);
 
             successDiv.textContent = 'Успішний вхід! Перенаправлення...';
             successDiv.style.display = 'block';
