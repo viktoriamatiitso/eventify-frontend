@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventify</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-container">
+                <a href="index.html" class="logo">🎉 Eventify</a>
+                <nav class="nav-links">
+                    <a href="artists.html">Артисти</a>
+                    <a href="venues.html">Майданчики</a>
+                    <a href="about.html">Про нас</a>
+                    <span id="auth-nav" style="display: inline-flex; gap: 15px; margin-left: 10px;"></span>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <div class="auth-card">
+                <h1>Вхід</h1>
+                <p class="auth-subtitle">Увійдіть у свій аккаунт Eventify</p>
+
+                <div id="error-message" class="global-error" style="display: none;"></div>
+                <div id="success-message" class="global-success" style="display: none;"></div>
+
+                <form id="login-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="username">Username <span class="required-star">*</span></label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль <span class="required-star">*</span></label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <p class="required-hint"><span class="required-star">*</span> - поля, обов'язкові для заповнення</p>
+
+                    <button type="submit" class="buy-ticket-btn" id="submit-btn">Увійти</button>
+                </form>
+
+                <p class="auth-redirect">
+                    Ще немає аккаунта? <a href="register.html" class="event-link">Зареєструватися</a>
+                </p>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Developed by Viktoria Matiitso</p>
+        </footer>
+
+        <script src="login.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
