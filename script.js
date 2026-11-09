@@ -103,8 +103,10 @@ function checkAuthStatus() {
             window.location.reload(); 
         });
     } else {
+        const currentUrl = encodeURIComponent(window.location.pathname + window.location.search);
+        
         authNav.innerHTML = `
-            <a href="login.html">Увійти</a>
+            <a href="login.html?next=${currentUrl}">Увійти</a>
             <a href="register.html">Реєстрація</a>
         `;
     }

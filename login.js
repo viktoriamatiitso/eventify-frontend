@@ -37,9 +37,14 @@ document.getElementById('login-form').addEventListener('submit', async function(
             successDiv.textContent = 'Успішний вхід! Перенаправлення...';
             successDiv.style.display = 'block';
 
-            setTimeout(() => {
-                window.location.href = 'index.html'; 
-            }, 1500);
+            const urlParams = new URLSearchParams(window.location.search);
+            const nextUrl = urlParams.get('next');
+
+            if (nextUrl) {
+                window.location.href = decodeURIComponent(nextUrl);
+            } else {
+                window.location.href = 'index.html';
+            }
         } else {
             errorDiv.textContent = 'Невірний username або пароль.';
             errorDiv.style.display = 'block';
