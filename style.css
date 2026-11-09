@@ -219,3 +219,108 @@ body {
 .back-btn:hover {
     color: #d8b4fe;
 }
+
+.auth-card {
+    background: #1e1e2e;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #2d2d3f;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.auth-card h1 {
+    color: #d8b4fe;
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.auth-subtitle {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.form-group label {
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.required-star {
+    color: #f87171;
+    font-weight: bold;
+}
+
+.required-hint {
+    color: #94a3b8;
+    font-size: 12px;
+    margin: 2px 0 8px 0;
+}
+
+.form-group input {
+    background-color: #121216;
+    border: 1px solid #2d2d3f;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #e2e8f0;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #a855f7;
+}
+
+.field-error {
+    color: #f87171;
+    font-size: 11px;
+    min-height: 14px;
+}
+
+.global-error {
+    background-color: rgba(248, 113, 113, 0.1);
+    border: 1px solid #f87171;
+    color: #f87171;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.global-success {
+    background-color: rgba(74, 222, 128, 0.1);
+    border: 1px solid #4ade80;
+    color: #4ade80;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.auth-form .buy-ticket-btn {
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.auth-redirect {
+    text-align: center;
+    margin-top: 15px;
+    color: #94a3b8;
+    font-size: 13px;
+}
