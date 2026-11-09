@@ -63,7 +63,7 @@ async function apiFetch(url, options = {}) {
             return response;
         }
 
-        const refreshResponse = await fetch('http://127.0.0.1:8000/api/auth/refresh/', {
+        const refreshResponse = await fetch('http://127.0.0.1:8000/api/auth/token/refresh/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ refresh: refreshToken })
