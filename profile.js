@@ -72,13 +72,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 msgDiv.style.color = "#cbd5e1";
 
                 const updatedData = {
+                    username: document.getElementById('username').value,
                     first_name: document.getElementById('first_name').value,
                     last_name: document.getElementById('last_name').value,
                     email: document.getElementById('email').value
                 };
 
                 try {
-                    const updateResponse = await fetch(`http://127.0.0.1:8000/api/users/${userId}/`, {
+                    const updateResponse = await fetch(`http://127.0.0.1:8000/api/auth/users/${userId}/`, {
                         method: 'PUT',
                         headers: {
                             'Authorization': `Bearer ${accessToken}`,
